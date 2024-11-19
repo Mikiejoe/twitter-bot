@@ -2,7 +2,7 @@ name: Create  tweet every three hours
 
 on:
   schedule:
-    - cron: "*/10 * * * *"
+    - cron: "*/10 */6 * * *"
 
 jobs:
   update-db:
