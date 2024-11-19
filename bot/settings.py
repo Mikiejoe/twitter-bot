@@ -53,7 +53,7 @@ TEMPLATES = [
     },
 ]
 
-WSGI_APPLICATION = "bot.wsgi.application"
+WSGI_APPLICATION = "bot.wsgi.app"
 
 
 # Database
