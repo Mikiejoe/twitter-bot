@@ -21,6 +21,7 @@ class Command(BaseCommand):
             t = Token.objects.get(name="token")
             t.token = st_token
             t.save()
+            print("refreshed token is ", st_token)
             tweet = generate_tweet()
             payload = {"text": tweet}
             res = post_tweet(payload, refreshed_token)

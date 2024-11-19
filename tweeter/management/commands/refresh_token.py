@@ -12,14 +12,14 @@ from tweeter.tweet import (
 def refresh_token():
     t = Token.objects.get(name="token")
     data = json.loads(t.token.replace("'", '"'))
-    refresh_token = data["refresh_token"]
+    refresh_t = data["refresh_token"]
     token_url = "https://api.x.com/2/oauth2/token"
 
     auth = HTTPBasicAuth(client_id, client_secret)
 
     data = {
         'grant_type': 'refresh_token',
-        'refresh_token': refresh_token
+        'refresh_token': refresh_t
     }
 
     headers = {
@@ -32,4 +32,5 @@ def refresh_token():
         refreshed_token = response.json()
         return refreshed_token
     else:
+        print("Error ", response.json().get("error_description"))
         return None
