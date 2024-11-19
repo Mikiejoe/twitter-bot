@@ -15,8 +15,8 @@ class Tweet(models.Model):
 
 
 class Token(models.Model):
-    name = models.CharField(max_length=140, primary_key=True)
-    token = models.CharField(max_length=140)
+    name = models.CharField(max_length=300, primary_key=True)
+    token = models.CharField(max_length=350)
 
     class Meta:
         verbose_name = "Token"
