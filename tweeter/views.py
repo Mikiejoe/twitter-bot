@@ -14,6 +14,16 @@ from .gemini import generate_tweet
 from .models import Token
 
 
+def index(request: HttpRequest):
+    return JsonResponse(
+        {
+            "message": "Hello, world!",
+            "status": 200,
+            "domain": request.get_host(),
+        }
+    )
+
+
 def home(request):
     global twitter
     twitter = make_token()
