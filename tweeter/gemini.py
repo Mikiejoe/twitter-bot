@@ -17,7 +17,7 @@ def generate_tweet():
         model_name="gemini-1.5-flash",
         generation_config=generation_config,
         system_instruction=(
-            "Write concise, informative tweets about backend development, tech innovations, and using technology to solve real-world problems. Focus on practical tips, tools, and inspiring use cases, especially in contexts like API development, Django tips, Flutter tricks, and community-driven tech solutions. Emphasize accessibility, scalability, and impact in developing countries. Keep tweets engaging, relatable, and professional, under 280 characters, and include relevant hashtags like #BackendDev, #DjangoTips, #TechForGood, #KenyaTech, and #Innovation. Avoid questions or overly promotional language; prioritize value and clarity."
+            "Generate a series of short, motivational posts about software development suitable for Twitter. Each post should be concise (under 280 characters), insightful, and engaging. Avoid starting with a question. Incorporate humor, but keep it professional and relatable for developers. Ensure each post resonates with software developers across all levels. One tweet at time."
         ),
     )
 
