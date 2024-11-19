@@ -19,7 +19,6 @@ jobs:
 
       - name: Install dependencies
         run: |
-          cd django
           python -m pip install --upgrade pip
           pip install -r requirements.txt  # Install project dependencies
 
@@ -43,7 +42,6 @@ jobs:
 
       - name: Run DB update command
         run: |
-          cd django
           python manage.py create_tweet
         env:
           DB_NAME: ${{ secrets.DB_NAME }}
