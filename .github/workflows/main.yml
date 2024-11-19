@@ -34,7 +34,7 @@ jobs:
           SECRET_KEY: ${{ secrets.SECRET_KEY }}
           DEBUG: ${{ secrets.DEBUG }}
           ALLOWED_HOSTS: ${{ secrets.ALLOWED_HOST }}
-          REDIRECT_URL: ${{ secrets.REDIRECT_URL }}
+          REDIRECT_URI: ${{ secrets.REDIRECT_URI }}
           CLIENT_SECRET: ${{ secrets.CLIENT_SECRET }}
           CLIENT_ID: ${{ secrets.CLIENT_ID }}
           GEMINI_API_KEY: ${{ secrets.GEMINI_API_KEY }}
